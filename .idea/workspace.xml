@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Models/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Models/Phonebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactsApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactsApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,18 +38,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Data.Repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PhoneBookRepositoryImplTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ContactsApp" />
@@ -59,8 +72,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhoneBookRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Data.Repository" />
+      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -73,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670330896686</updated>
-      <workItem from="1670330898443" duration="4096000" />
+      <workItem from="1670330898443" duration="6334000" />
     </task>
     <servers />
   </component>

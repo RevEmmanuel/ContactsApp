@@ -2,10 +2,16 @@ package Data.Repository;
 
 import Data.Models.Phonebook;
 
+import java.util.ArrayList;
+
 public class PhoneBookRepositoryImpl implements PhoneBookRepository {
+
+    private final ArrayList<Phonebook> phonebooks = new ArrayList<>();
+
     @Override
     public Phonebook save(Phonebook phonebook) {
-        return null;
+        phonebooks.add(phonebook);
+        return phonebook;
     }
 
     @Override
@@ -15,6 +21,6 @@ public class PhoneBookRepositoryImpl implements PhoneBookRepository {
 
     @Override
     public int count() {
-        return 0;
+        return phonebooks.size();
     }
 }
