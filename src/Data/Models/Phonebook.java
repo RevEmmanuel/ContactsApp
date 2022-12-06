@@ -6,8 +6,8 @@ import java.util.List;
 public class Phonebook {
 
     private String ownerName;
-    private String phoneNumber;
-    private final List<Contact> contacts = new ArrayList<>();
+    private String ownerPhoneNumber;
+    private List<Contact> contacts = new ArrayList<>();
 
     public String getOwnerName() {
         return ownerName;
@@ -17,15 +17,19 @@ public class Phonebook {
         this.ownerName = ownerName;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getOwnerPhoneNumber() {
+        return ownerPhoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setOwnerPhoneNumber(String ownerPhoneNumber) {
+        this.ownerPhoneNumber = ownerPhoneNumber;
     }
 
     public List<Contact> getContacts() {
         return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
     }
 }

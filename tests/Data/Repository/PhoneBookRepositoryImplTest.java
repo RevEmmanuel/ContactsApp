@@ -27,13 +27,33 @@ class PhoneBookRepositoryImplTest {
 
     @Test
     void savePhoneBookFindByIdReturnSavedPhoneBook() {
-        // when I save a new phonebook and find by id
         paragons.setOwnerName("Cohort13");
-        paragons.setPhoneNumber("08123456789");
+        paragons.setOwnerPhoneNumber("08123456789");
+
+        // when I save a new phonebook and find by id
         myPhoneBookRepository.save(paragons);
         Phonebook savedPhoneBook = myPhoneBookRepository.findById("08123456789"); // phone number is the id
 
         // assert that the phonebook is equals to saved phonebook
         assertEquals(paragons, savedPhoneBook);
+    }
+
+    @Test
+    void updatePhoneBookInformationByIdReturnUpdatedPhoneBookTest() {
+        paragons.setOwnerName("Cohort13");
+        paragons.setOwnerPhoneNumber("08123456789");
+
+        // when I save a new phonebook
+        myPhoneBookRepository.save(paragons);
+        // and update the details
+        Phonebook updatedPhoneBook = new Phonebook();
+        updatedPhoneBook.setOwnerName("Paragons");
+        updatedPhoneBook.setOwnerPhoneNumber("08123456789");
+        myPhoneBookRepository.save(updatedPhoneBook);
+
+        // assert that the phonebook details have been updated
+        Phonebook savedPhoneBook = myPhoneBookRepository.findById("08123456789");
+        assertEquals(1, myPhoneBookRepository.count());
+        assertEquals("Paragons", savedPhoneBook.getOwnerName());
     }
 }
