@@ -33,7 +33,7 @@ public class ContactRepositoryImpl implements ContactRepository {
 
     @Override
     public void delete(Contact contact) {
-
+        contacts.remove(findContact(contact.getId()));
     }
 
     @Override

@@ -62,4 +62,27 @@ class PhoneBookRepositoryImplTest {
         assertEquals(1, myPhoneBookRepository.count());
         assertEquals("Paragons", savedPhoneBook.getOwnerName());
     }
+
+    @Test
+    void testThatPhonebookCanBeDeleted() {
+        paragons.setOwnerName("Cohort13");
+        paragons.setOwnerPhoneNumber("08123456789");
+        Phonebook newPhoneBook = new Phonebook();
+        newPhoneBook.setOwnerName("Paragons");
+        newPhoneBook.setOwnerPhoneNumber("08122220222");
+
+
+        // when I save new phonebooks
+        myPhoneBookRepository.save(paragons);
+        myPhoneBookRepository.save(newPhoneBook);
+        assertEquals(2, myPhoneBookRepository.count());
+        // and I delete a phonebook
+        myPhoneBookRepository.delete(paragons);
+
+        // check that phonebook cannot be found
+        assertThrows(PhonebookNotFoundException.class, () -> myPhoneBookRepository.findById(paragons.getOwnerPhoneNumber()));
+        // and that sie has decreased
+        assertEquals(1, myPhoneBookRepository.count());
+        assertEquals(newPhoneBook, myPhoneBookRepository.findById("08122220222"));
+    }
 }

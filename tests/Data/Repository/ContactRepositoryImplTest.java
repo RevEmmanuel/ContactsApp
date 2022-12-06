@@ -91,4 +91,25 @@ class ContactRepositoryImplTest {
         assertEquals("Valence", savedPhoneBook.getLastName());
         assertEquals("08122220222", savedPhoneBook.getPhoneNumber());
     }
+
+    @Test
+    void testThatContactCanBeDeleted() {
+        paragonConnect.setFirstName("Cohort");
+        paragonConnect.setLastName("-13");
+        paragonConnect.setPhoneNumber("08123456789");
+        Contact myContact = new Contact();
+
+        // when I save new contacts
+        myContactRepository.save(paragonConnect);
+        myContactRepository.save(myContact);
+        assertEquals(2, myContactRepository.count());
+        // and I delete a contact
+        myContactRepository.delete(paragonConnect);
+
+        // check that contact cannot be found
+        assertThrows(ContactNotFoundException.class, () -> myContactRepository.findById(paragonConnect.getId()));
+        // and that sie has decreased
+        assertEquals(1, myContactRepository.count());
+        assertEquals(myContact, myContactRepository.findById(2));
+    }
 }

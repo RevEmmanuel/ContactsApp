@@ -30,7 +30,7 @@ public class PhoneBookRepositoryImpl implements PhoneBookRepository {
 
     @Override
     public void delete(Phonebook phonebook) {
-
+        phoneBooks.remove(findPhoneBook(phonebook.getOwnerPhoneNumber()));
     }
 
     @Override

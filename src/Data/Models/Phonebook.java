@@ -9,27 +9,28 @@ public class Phonebook {
     private String ownerPhoneNumber;
     private List<Contact> contacts = new ArrayList<>();
 
-    public String getOwnerName() {
-        return ownerName;
-    }
-
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
 
-    public String getOwnerPhoneNumber() {
-        return ownerPhoneNumber;
+    public String getOwnerName() {
+        return ownerName;
     }
 
     public void setOwnerPhoneNumber(String ownerPhoneNumber) {
         this.ownerPhoneNumber = ownerPhoneNumber;
     }
 
-    public List<Contact> getContacts() {
-        return contacts;
+    public String getOwnerPhoneNumber() {
+        return ownerPhoneNumber;
     }
 
     public void setContacts(List<Contact> contacts) {
         this.contacts = contacts;
     }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
 }
