@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="" />
+    <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/Models/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/Models/Phonebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +42,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670330896686</updated>
-      <workItem from="1670330898443" duration="306000" />
+      <workItem from="1670330898443" duration="4096000" />
     </task>
     <servers />
   </component>
