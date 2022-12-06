@@ -7,4 +7,6 @@ public interface PhoneBookRepository {
     Phonebook save(Phonebook phonebook);
     void delete(Phonebook phonebook);
     int count();
+
+    Phonebook findById(String phoneNumber);
 }
