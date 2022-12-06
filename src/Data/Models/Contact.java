@@ -5,6 +5,7 @@ public class Contact {
     private String firstName;
     private String lastName;
     private String phoneNumber;
+    private int id;
 
     public String getFirstName() {
         return firstName;
@@ -28,5 +29,13 @@ public class Contact {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -16,8 +16,4 @@ public class PhonebookNotFoundException extends RuntimeException {
     public PhonebookNotFoundException(Throwable cause) {
         super(cause);
     }
-
-    public PhonebookNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
 }

@@ -1,6 +1,7 @@
 package Data.Repository;
 
 import Data.Models.Phonebook;
+import Exceptions.PhonebookNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,6 +37,11 @@ class PhoneBookRepositoryImplTest {
 
         // assert that the phonebook is equals to saved phonebook
         assertEquals(paragons, savedPhoneBook);
+    }
+
+    @Test
+    void testThatThrowsExceptionWhenPhoneBookIsNotFound() {
+        assertThrows(PhonebookNotFoundException.class, () -> myPhoneBookRepository.findById("12345"));
     }
 
     @Test
