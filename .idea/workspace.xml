@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,9 +64,33 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.PhoneBookRepositoryImplTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="ContactRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Data.Repository" />
+      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactRepositoryImplTest.updateContactInformationByIdReturnUpdatedContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Data.Repository" />
+      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
+      <option name="METHOD_NAME" value="updateContactInformationByIdReturnUpdatedContactTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,22 +106,6 @@
       <option name="PACKAGE_NAME" value="Data.Repository" />
       <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhoneBookRepositoryImplTest.savePhoneBookFindByIdReturnSavedPhoneBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ContactsApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
-      <option name="METHOD_NAME" value="savePhoneBookFindByIdReturnSavedPhoneBook" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
+        <item itemvalue="JUnit.ContactRepositoryImplTest" />
+        <item itemvalue="JUnit.ContactRepositoryImplTest.updateContactInformationByIdReturnUpdatedContactTest" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest.testThatThrowsExceptionWhenPhoneBookIsNotFound" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest.updatePhoneBookInformationByIdReturnUpdatedPhoneBookTest" />
-        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.savePhoneBookFindByIdReturnSavedPhoneBook" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670330896686</updated>
-      <workItem from="1670330898443" duration="10380000" />
+      <workItem from="1670330898443" duration="12383000" />
     </task>
     <servers />
   </component>

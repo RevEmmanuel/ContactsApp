@@ -7,6 +7,8 @@ import java.util.ArrayList;
 public class ContactRepositoryImpl implements ContactRepository {
 
     private final ArrayList<Contact> contacts = new ArrayList<>();
+    private int idCounter = 1;
+
     @Override
     public Contact save(Contact contact) {
         try {
@@ -17,6 +19,7 @@ public class ContactRepositoryImpl implements ContactRepository {
         }
         catch (ContactNotFoundException contactNotFound) {
             // else save new phonebook
+            contact.setId(idCounter++);
             contacts.add(contact);
         }
         return contact;
