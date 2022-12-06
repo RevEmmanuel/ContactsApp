@@ -81,7 +81,7 @@ class PhoneBookRepositoryImplTest {
 
         // check that phonebook cannot be found
         assertThrows(PhonebookNotFoundException.class, () -> myPhoneBookRepository.findById(paragons.getOwnerPhoneNumber()));
-        // and that sie has decreased
+        // and that size has decreased
         assertEquals(1, myPhoneBookRepository.count());
         assertEquals(newPhoneBook, myPhoneBookRepository.findById("08122220222"));
     }

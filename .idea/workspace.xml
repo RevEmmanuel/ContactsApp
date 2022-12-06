@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data/Models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Models/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Models/Phonebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Models/Phonebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" afterDir="false" />
     </list>
@@ -38,26 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -78,6 +78,22 @@
       <option name="PACKAGE_NAME" value="Data.Repository" />
       <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactRepositoryImplTest.testThatContactCanBeDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Data.Repository" />
+      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testThatContactCanBeDeleted" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneBookRepositoryImplTest.testThatThrowsExceptionWhenPhoneBookIsNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PhoneBookRepositoryImplTest.testThatPhonebookCanBeDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
@@ -123,23 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Data.Repository" />
       <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
-      <option name="METHOD_NAME" value="testThatThrowsExceptionWhenPhoneBookIsNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhoneBookRepositoryImplTest.updatePhoneBookInformationByIdReturnUpdatedPhoneBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ContactsApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
-      <option name="METHOD_NAME" value="updatePhoneBookInformationByIdReturnUpdatedPhoneBookTest" />
+      <option name="METHOD_NAME" value="testThatPhonebookCanBeDeleted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ContactRepositoryImplTest" />
+        <item itemvalue="JUnit.ContactRepositoryImplTest.testThatContactCanBeDeleted" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
+        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.testThatPhonebookCanBeDeleted" />
         <item itemvalue="JUnit.ContactRepositoryImplTest.updateContactInformationByIdReturnUpdatedContactTest" />
-        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.testThatThrowsExceptionWhenPhoneBookIsNotFound" />
-        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.updatePhoneBookInformationByIdReturnUpdatedPhoneBookTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670330896686</updated>
-      <workItem from="1670330898443" duration="13442000" />
+      <workItem from="1670330898443" duration="13752000" />
+      <workItem from="1670347295478" duration="1061000" />
     </task>
     <servers />
   </component>

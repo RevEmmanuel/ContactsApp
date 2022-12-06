@@ -8,6 +8,5 @@ public interface ContactRepository {
     Contact save(Contact contact);
     void delete(Contact contact);
     int count();
-
-    Contact findById(int id);
+    Contact findById(String phoneNumber);
 }

@@ -7,19 +7,17 @@ import java.util.ArrayList;
 public class ContactRepositoryImpl implements ContactRepository {
 
     private final ArrayList<Contact> contacts = new ArrayList<>();
-    private int idCounter = 1;
 
     @Override
     public Contact save(Contact contact) {
         try {
             // check if the phonebook exists already
-            Contact savedContact = findContact(contact.getId());
+            Contact savedContact = findContact(contact.getPhoneNumber());
             // if true, then update the phonebook details
             updateContact(savedContact, contact);
         }
         catch (ContactNotFoundException contactNotFound) {
             // else save new phonebook
-            contact.setId(idCounter++);
             contacts.add(contact);
         }
         return contact;
@@ -28,12 +26,11 @@ public class ContactRepositoryImpl implements ContactRepository {
     private void updateContact(Contact update, Contact contact) {
         update.setFirstName(contact.getFirstName());
         update.setLastName(contact.getLastName());
-        update.setPhoneNumber(contact.getPhoneNumber());
     }
 
     @Override
     public void delete(Contact contact) {
-        contacts.remove(findContact(contact.getId()));
+        contacts.remove(findContact(contact.getPhoneNumber()));
     }
 
     @Override
@@ -42,16 +39,16 @@ public class ContactRepositoryImpl implements ContactRepository {
     }
 
     @Override
-    public Contact findById(int id) {
-        return findContact(id);
+    public Contact findById(String phoneNumber) {
+        return findContact(phoneNumber);
     }
 
-    private Contact findContact(int id) {
+    private Contact findContact(String phoneNumber) {
         for (Contact contact : contacts) {
-            if (contact.getId() == id) {
+            if (contact.getPhoneNumber().equals(phoneNumber)) {
                 return contact;
             }
         }
-        throw new ContactNotFoundException("Contact With id " + id + " not found");
+        throw new ContactNotFoundException("Contact With id " + phoneNumber + " not found");
     }
 }
