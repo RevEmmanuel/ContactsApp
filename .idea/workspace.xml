@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Models/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -66,7 +61,7 @@
       <recent name="Data.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactRepositoryImplTest">
+  <component name="RunManager" selected="JUnit.PhoneBookRepositoryImplTest">
     <configuration name="ContactRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
       <extension name="coverage">
@@ -98,22 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactRepositoryImplTest.updateContactInformationByIdReturnUpdatedContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ContactsApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
-      <option name="METHOD_NAME" value="updateContactInformationByIdReturnUpdatedContactTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PhoneBookRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
       <extension name="coverage">
@@ -125,6 +104,22 @@
       <option name="PACKAGE_NAME" value="Data.Repository" />
       <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneBookRepositoryImplTest.savePhoneBookTotalPhoneBookIsOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Data.Repository" />
+      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
+      <option name="METHOD_NAME" value="savePhoneBookTotalPhoneBookIsOneTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
+        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.savePhoneBookTotalPhoneBookIsOneTest" />
         <item itemvalue="JUnit.ContactRepositoryImplTest" />
         <item itemvalue="JUnit.ContactRepositoryImplTest.testThatContactCanBeDeleted" />
-        <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest.testThatPhonebookCanBeDeleted" />
-        <item itemvalue="JUnit.ContactRepositoryImplTest.updateContactInformationByIdReturnUpdatedContactTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +159,9 @@
       <option name="presentableId" value="Default" />
       <updated>1670330896686</updated>
       <workItem from="1670330898443" duration="13752000" />
-      <workItem from="1670347295478" duration="1061000" />
+      <workItem from="1670347295478" duration="1335000" />
+      <workItem from="1670396148702" duration="3006000" />
+      <workItem from="1670410492367" duration="728000" />
     </task>
     <servers />
   </component>
