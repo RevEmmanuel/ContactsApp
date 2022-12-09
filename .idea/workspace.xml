@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Services/PhoneBookServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/PhoneBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/PhoneBookServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +61,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Services" />
       <recent name="Data.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PhoneBookRepositoryImplTest">
+  <component name="RunManager" selected="JUnit.PhoneBookServiceImplTest">
     <configuration name="ContactRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
       <extension name="coverage">
@@ -73,22 +77,6 @@
       <option name="PACKAGE_NAME" value="Data.Repository" />
       <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactRepositoryImplTest.testThatContactCanBeDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ContactsApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
-      <option name="METHOD_NAME" value="testThatContactCanBeDeleted" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,17 +112,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneBookRepositoryImplTest.testThatPhonebookCanBeDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PhoneBookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="PATTERN" value="Services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
-      <option name="METHOD_NAME" value="testThatPhonebookCanBeDeleted" />
+      <option name="PACKAGE_NAME" value="Services" />
+      <option name="MAIN_CLASS_NAME" value="Services.PhoneBookServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneBookServiceImplTest.testThatRegisteringDuplicateUserFails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactsApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Services" />
+      <option name="MAIN_CLASS_NAME" value="Services.PhoneBookServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatRegisteringDuplicateUserFails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookServiceImplTest" />
+        <item itemvalue="JUnit.PhoneBookServiceImplTest.testThatRegisteringDuplicateUserFails" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest" />
         <item itemvalue="JUnit.PhoneBookRepositoryImplTest.savePhoneBookTotalPhoneBookIsOneTest" />
         <item itemvalue="JUnit.ContactRepositoryImplTest" />
-        <item itemvalue="JUnit.ContactRepositoryImplTest.testThatContactCanBeDeleted" />
-        <item itemvalue="JUnit.PhoneBookRepositoryImplTest.testThatPhonebookCanBeDeleted" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +165,7 @@
       <workItem from="1670347295478" duration="1335000" />
       <workItem from="1670396148702" duration="3006000" />
       <workItem from="1670410492367" duration="728000" />
+      <workItem from="1670574602900" duration="3899000" />
     </task>
     <servers />
   </component>

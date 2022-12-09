@@ -4,13 +4,15 @@ import Data.Models.Contact;
 
 public interface PhoneBookService {
 
-    void register();
+    void register(String ownerName, String ownerPhoneNumber);
 
-    void addContact();
+    void addContact(String ownerPhoneNumber, String firstName, String lastName, String phoneNumber);
 
-    Contact findContact();
+    Contact findContact(String ownerPhoneNumber, String phoneNumberToFind);
 
     void delete();
 
     void updateContact();
+
+    int countNumberOfUsers();
 }
