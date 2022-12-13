@@ -1,7 +1,7 @@
-package Data.Repository;
+package data.repository;
 
-import Data.Models.Contact;
-import Exceptions.ContactNotFoundException;
+import data.models.Contact;
+import exceptions.ContactNotFoundException;
 import java.util.ArrayList;
 
 public class ContactRepositoryImpl implements ContactRepository {

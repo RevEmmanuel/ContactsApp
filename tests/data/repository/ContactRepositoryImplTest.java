@@ -1,7 +1,7 @@
-package Data.Repository;
+package data.repository;
 
-import Data.Models.Contact;
-import Exceptions.ContactNotFoundException;
+import data.models.Contact;
+import exceptions.ContactNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

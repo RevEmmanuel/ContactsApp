@@ -1,4 +1,4 @@
-package Data.Models;
+package data.models;
 
 public class Contact {
 

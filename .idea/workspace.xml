@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74a97-f5f0-4dd3-926e-4a30cc9e2358" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Services/PhoneBookServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/requests/ContactRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/requests/PhoneBookRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/PhoneBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/PhoneBookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Models/Phonebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Phonebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/ContactRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/ContactRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/PhoneBookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Repository/PhoneBookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/PhoneBookRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ContactNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ContactNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/PhonebookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/PhonebookNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ContactsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContactsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PhoneBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/PhoneBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PhoneBookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/ContactRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data/repository/ContactRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Data/Repository/PhoneBookRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data/repository/PhoneBookRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Services/PhoneBookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/services/PhoneBookServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,12 +84,12 @@
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="PATTERN" value="data.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.ContactRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.ContactRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,12 +99,12 @@
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="PATTERN" value="data.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.PhoneBookRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,12 +114,12 @@
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Data.Repository.*" />
+          <option name="PATTERN" value="data.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Data.Repository" />
-      <option name="MAIN_CLASS_NAME" value="Data.Repository.PhoneBookRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.PhoneBookRepositoryImplTest" />
       <option name="METHOD_NAME" value="savePhoneBookTotalPhoneBookIsOneTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -116,12 +130,12 @@
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Services.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Services" />
-      <option name="MAIN_CLASS_NAME" value="Services.PhoneBookServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="services.PhoneBookServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,12 +145,12 @@
       <module name="ContactsApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Services.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Services" />
-      <option name="MAIN_CLASS_NAME" value="Services.PhoneBookServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="services.PhoneBookServiceImplTest" />
       <option name="METHOD_NAME" value="testThatRegisteringDuplicateUserFails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -165,7 +179,9 @@
       <workItem from="1670347295478" duration="1335000" />
       <workItem from="1670396148702" duration="3006000" />
       <workItem from="1670410492367" duration="728000" />
-      <workItem from="1670574602900" duration="3899000" />
+      <workItem from="1670574602900" duration="4257000" />
+      <workItem from="1670837569208" duration="1977000" />
+      <workItem from="1670872640682" duration="4235000" />
     </task>
     <servers />
   </component>

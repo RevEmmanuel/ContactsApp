@@ -1,7 +1,6 @@
-package Data.Repository;
+package data.repository;
 
-import Data.Models.Contact;
-import Data.Models.Phonebook;
+import data.models.Contact;
 
 public interface ContactRepository {
 

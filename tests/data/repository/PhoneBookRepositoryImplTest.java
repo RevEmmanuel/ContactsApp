@@ -1,7 +1,7 @@
-package Data.Repository;
+package data.repository;
 
-import Data.Models.Phonebook;
-import Exceptions.PhonebookNotFoundException;
+import data.models.Phonebook;
+import exceptions.PhonebookNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

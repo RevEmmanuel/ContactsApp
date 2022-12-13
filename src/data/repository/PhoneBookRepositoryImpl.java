@@ -1,8 +1,9 @@
-package Data.Repository;
+package data.repository;
 
-import Data.Models.Phonebook;
-import Exceptions.PhonebookNotFoundException;
+import data.models.Phonebook;
+import exceptions.PhonebookNotFoundException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class PhoneBookRepositoryImpl implements PhoneBookRepository {
 
@@ -21,6 +22,10 @@ public class PhoneBookRepositoryImpl implements PhoneBookRepository {
             phoneBooks.add(phoneBook);
         }
         return phoneBook;
+    }
+
+    public List<Phonebook> getPhoneBook() {
+        return phoneBooks;
     }
 
     private void updatePhoneBook(Phonebook update, Phonebook phoneBook) {
