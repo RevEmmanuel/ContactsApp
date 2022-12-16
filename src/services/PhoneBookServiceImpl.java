@@ -57,12 +57,12 @@ public class PhoneBookServiceImpl implements PhoneBookService {
 
     @Override
     public void updateContact(String ownerPhoneNumber, ContactRequest contactRequest) {
-
+        phoneBookRepository.findById(ownerPhoneNumber);
     }
 
-    private Phonebook findPhoneBook(String ownerPhoneNumber) {
-        for (Phonebook phoneBook : phoneBookRepository.getPhoneBook()) if (phoneBook.getOwnerPhoneNumber().equals(ownerPhoneNumber)) return phoneBook;
-        throw new PhonebookNotFoundException("Phonebook not found");
-    }
+//    private Phonebook findPhoneBook(String ownerPhoneNumber) {
+//        for (Phonebook phoneBook : phoneBookRepository.getPhoneBook()) if (phoneBook.getOwnerPhoneNumber().equals(ownerPhoneNumber)) return phoneBook;
+//        throw new PhonebookNotFoundException("Phonebook not found");
+//    }
 
 }
